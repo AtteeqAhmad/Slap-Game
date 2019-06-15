@@ -1,0 +1,16 @@
+#func {
+      float: left;
+      position: relative;
+}
+
+#extra {
+float: right;
+position: relative;
+}
+
+#img {
+position: relative;
+      height: 300px;
+      width: 300px
+
+}

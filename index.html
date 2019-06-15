@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css>
+      <link rel="stylesheet" href="style.css">
+      <title>Slap Game</title>
+</head>
+<body>
+ <header class="col container-fluid">
+       <h1 class="text-center">
+             Slap Game
+       </h1>
+<main class="col">
+      
+      <div class="col" id="power">
+                              <button type="button" class="btn btn-success btn-primary btn-lg" onclick="power()">
+                        Ppppower Uppp
+                              </button>
+                  </div>
+      
+      
+                  <div class="col">
+                  <div class="row btn-group-vertical" id="func">
+                              <button class="btn btn-info" onclick="slap()">Slap
+                              <img src="" alt=""></button>
+                              <button class="btn btn-info" onclick="punch()">Punch</button>
+                              <button class="btn btn-info" onclick="kick()">Kick</button>
+                        </div>
+      </div>
+</div>
+
+<div class="col container-fluid" id="img">
+      <img src="https://static.boredpanda.com/blog/wp-content/uploads/2017/06/todays-problems-illustrations-john-holcroft-fb__700-png.jpg">
+      <span>
+            <h3 id="health">Health 100</h3>
+      </span>
+</div>
+
+<div class="col">
+            <div class="row btn-group-vertical"  id="extra">
+                        <button class="btn btn-dark" onclick="clap()">Clap</button>
+                        <button class="btn btn-dark" onclick="munch()">Munch</button>
+                        <button class="btn btn-dark" onclick="klick()">Klick</button>
+                  </div>
+</div>
+
+
+            <div class="col">
+                  <div class="row" id="reset">
+                        <button class="btn btn-warning" on-click="reset()">Reset</button>
+                  </div>
+                        
+</div>
+</main>
+
+<footer class="col">
+
+
+</footer>
+
+ </header>
+
+      <script src="app.js">
+      </script>
+</body>
+</html>
