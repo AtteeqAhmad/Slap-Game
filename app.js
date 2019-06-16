@@ -6,14 +6,7 @@ let resetElem = document.querySelector('#reset')
 let healthElem = document.querySelector('#health')
 let imgElem = document.querySelector('#img')
 
-let img = {
-   img:[{
-            img: "slap",
-            image: "https://g.rrrather.com/img/q/63242a.jpg"}
-      },
-]
-
-
+// power up to certain level
 function power(){
       health += 11
       drawhealth()
@@ -22,7 +15,7 @@ function power(){
 
 // decreasing power by slapping and func
 function slap(){
-      health -=1
+      health -= 3
       drawhealth()
       console.log("slapworks")
 

@@ -10,60 +10,62 @@
       <title>Slap Game</title>
 </head>
 <body>
- <header class="col container-fluid">
-       <h1 class="text-center">
-             Slap Game
-       </h1>
-<main class="col">
-      
-      <div class="col" id="power">
-                              <button type="button" class="btn btn-success btn-primary btn-lg" onclick="power()">
-                        Ppppower Uppp
+      <header class="col container-fluid">
+            <h1 class="text-center">
+                  Slap Game
+            </h1>
+            <main class="col">
+                  
+                  <div class="col" id="power">
+                        <button type="button" class="btn btn-success btn-primary btn-lg" onclick="power()">
+                                    Ppppower Uppp
                               </button>
-                  </div>
-      
-      
-                  <div class="col">
-                  <div class="row btn-group-vertical" id="func">
-                              <button class="btn btn-info" onclick="slap()">Slap
-                              <img src="" alt=""></button>
-                              <button class="btn btn-info" onclick="punch()">Punch</button>
-                              <button class="btn btn-info" onclick="kick()">Kick</button>
                         </div>
-      </div>
-</div>
-
-<div class="col container-fluid" id="img">
-      <img src="https://static.boredpanda.com/blog/wp-content/uploads/2017/06/todays-problems-illustrations-john-holcroft-fb__700-png.jpg">
-      <span>
-            <h3 id="health">Health 100</h3>
-      </span>
-</div>
-
-<div class="col">
-            <div class="row btn-group-vertical"  id="extra">
-                        <button class="btn btn-dark" onclick="clap()">Clap</button>
-                        <button class="btn btn-dark" onclick="munch()">Munch</button>
-                        <button class="btn btn-dark" onclick="klick()">Klick</button>
-                  </div>
-</div>
-
-
-            <div class="col">
-                  <div class="row" id="reset">
-                        <button class="btn btn-warning" on-click="reset()">Reset</button>
-                  </div>
                         
-</div>
-</main>
-
-<footer class="col">
-
-
-</footer>
-
- </header>
-
+                        
+                        <div class="col container-fluid" id="img">
+                              <img src="https://static.boredpanda.com/blog/wp-content/uploads/2017/06/todays-problems-illustrations-john-holcroft-fb__700-png.jpg">
+                              <span>
+                                    <h3>Health:<span id="health">--</span></h3><br>
+                                    <b>
+                                          
+                                    </b>
+                              </span>
+                        </div>
+                  </header>
+                  
+            </div>
+      </main>
+      
+      <footer class="col">
+            
+            
+            <div class="col">
+                  <div class="row btn-group-vertical" id="func">
+                        <button class="btn btn-info" onclick="slap()">Slap</button>
+                                    <button class="btn btn-info" onclick="punch()">Punch</button>
+                                    <button class="btn btn-info" onclick="kick()">Kick</button>
+                              </div>
+                        </div>
+                  </div>
+                  
+                  <div class="col">
+                        <div class="row btn-group-vertical"  id="extra">
+                              <button class="btn btn-dark" onclick="clap()">Clap</button>
+                              <button class="btn btn-dark" onclick="munch()">Munch</button>
+                              <button class="btn btn-dark" onclick="klick()">Klick</button>
+                        </div>
+                  </div>
+                  
+                  
+                  <div class="col">
+                        <div class="row" id="reset">
+                              <button class="btn btn-warning" on-click="reset()">Reset</button>
+                        </div>
+            
+      </footer>
+      
+      
       <script src="app.js">
       </script>
 </body>
