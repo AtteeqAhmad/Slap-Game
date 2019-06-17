@@ -14,34 +14,33 @@
             <h1 class="text-center">
                   Slap Game
             </h1>
-            <main class="col">
-                  
-                  <div class="col" id="power">
-                        <button type="button" class="btn btn-success btn-primary btn-lg" onclick="power()">
-                                    Ppppower Uppp
-                              </button>
-                        </div>
+      </header>
+
+            <main>
+                  <section>
+
+                        <div class="col" id="power">
+                              <button type="button" class="btn btn-success btn-primary btn-lg" onclick="power()">
+                                          Ppooower Uppp
+                                    </button>
+                              </div>
+                        </section>
                         
-                        
-                        <div class="col container-fluid" id="img">
-                              <img src="https://static.boredpanda.com/blog/wp-content/uploads/2017/06/todays-problems-illustrations-john-holcroft-fb__700-png.jpg">
-                              <span>
-                                    <h3>Health:<span id="health">--</span></h3><br>
-                                    <b>
-                                          
-                                    </b>
-                              </span>
+                        <section>
+                              <div class="col container-fluid" id="target">
+                                    
+                                    <img src="https://static.boredpanda.com/blog/wp-content/uploads/2017/06/todays-problems-illustrations-john-holcroft-fb__700-png.jpg">
+                                    
+                                    <h3>Health:<span id="health">100</span></h3>
+
+                                    <h4>Hit:<span id="hit">0</span></h4>
                         </div>
-                  </header>
-                  
-            </div>
+                  </section>
       </main>
       
       <footer class="col">
-            
-            
-            <div class="col">
-                  <div class="row btn-group-vertical" id="func">
+            <div class="col-6">
+                  <div class="btn-group-vertical-left" id="func">
                         <button class="btn btn-info" onclick="slap()">Slap</button>
                                     <button class="btn btn-info" onclick="punch()">Punch</button>
                                     <button class="btn btn-info" onclick="kick()">Kick</button>
@@ -49,18 +48,18 @@
                         </div>
                   </div>
                   
-                  <div class="col">
-                        <div class="row btn-group-vertical"  id="extra">
-                              <button class="btn btn-dark" onclick="clap()">Clap</button>
-                              <button class="btn btn-dark" onclick="munch()">Munch</button>
-                              <button class="btn btn-dark" onclick="klick()">Klick</button>
+                  <div class="col-6">
+                        <div class="btn btn-dark btn-group-vertical-right">
+                              <button onclick="extra()">Clapbtn btn-dark </button>
+                              <button onclick="extra()">Munchbtn btn-dark </button>
+                              <button onclick="extra()">Klick</button>
                         </div>
                   </div>
                   
                   
                   <div class="col">
-                        <div class="row" id="reset">
-                              <button class="btn btn-warning" on-click="reset()">Reset</button>
+                        <div class="row">
+                              <button class="btn btn-warning" on-click="reset(health.100)">Reset</button>
                         </div>
             
       </footer>
