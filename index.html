@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css>
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css> <link rel="stylesheet"
+            href="style.css">
       <title>Slap Game</title>
 </head>
+
 <body>
       <header class="col container-fluid">
             <h1 class="text-center">
@@ -16,71 +19,74 @@
             </h1>
       </header>
 
-            <main>
-                  <section>
+      <main>
+            <section>
 
-                        <div class="col" id="power">
-                              <button type="button" class="btn btn-success btn-primary btn-lg" onclick="power()">
-                                          Ppooower Uppp
-                                    </button>
-                              </div>
-                        </section>
-                        
-                        <section>
-                              <div class="col container-fluid" id="target">
-                                    <div class="row">
+                  <div class="col" id="power">
+                        <button type="button" class="btn btn-success btn-primary btn-lg" onclick="power()">
+                              Ppooower Uppp
+                        </button>
+                  </div>
+            </section>
 
-                                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7DHcaj60dfShI89r20gHZsEY4CmbfsGhtA243RZcJvS25U-PHYg">
-                                          
-                                          <h3>Health:<span id="health">100</span></h3>
-                                          <br>
-                                          <h4>Hit:<span id="hit">0</span></h4>
-                                    </div>
+            <section>
+                  <div class="col container-fluid" id="target">
+                        <div class="row">
+
+                              <img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7DHcaj60dfShI89r20gHZsEY4CmbfsGhtA243RZcJvS25U-PHYg">
+
+                              <h3>Health:<span id="health">100</span></h3>
+                              <br>
+                              <h4>Hit:<span id="hit">0</span></h4>
                         </div>
-                  </section>
+                  </div>
+            </section>
 
-                  <section>
-                        <div class="col container-fluid" id="fighter">
-                              <div class="row">
+            <section>
+                  <div class="col container-fluid" id="fighter">
+                        <div class="row">
 
-                                    <img src="https://media.eventhubs.com/artwork/zangief/alpha_07.jpg" style= "height: 200px; width: 200px;" >
-                                    
-                                    <h3>Health:<span id="health">100</span></h3>
-                                    <br>
-                                    <h4>Hit:<span id="hit">0</span></h4>
-                              </div>
+                              <img src="https://media.eventhubs.com/artwork/zangief/alpha_07.jpg"
+                                    style="height: 200px; width: 200px;">
+
+                              <h3>Health:<span id="health">100</span></h3>
+                              <br>
+                              <h4>Hit:<span id="hit">0</span></h4>
+                        </div>
                   </div>
             </section>
       </main>
-      
+
       <footer class="col">
             <div class="col-6">
                   <div class="btn-group-vertical" id="func">
                         <button class="btn btn-info" onclick="slap()">Slap</button>
-                                    <button class="btn btn-info" onclick="punch()">Punch</button>
-                                    <button class="btn btn-info" onclick="kick()">Kick</button>
-                              </div>
-                        </div>
+                        <button class="btn btn-info" onclick="punch()">Punch</button>
+                        <button class="btn btn-info" onclick="kick()">Kick</button>
                   </div>
-                  
-                  <div class="col-6">
-                        <div class="btn btn-dark btn-group-vertical">
-                              <button onclick="additem()">Clap</button>
-                              <button onclick="additem()">Munch</button>
-                              <button onclick="additem()">Klick</button>
-                        </div>
+            </div>
+            </div>
+
+            <div class="col-6">
+                  <div class="btn btn-dark btn-group-vertical">
+                        <button onclick="additem('clap')">Clap</button>
+                        <button onclick="additem('munch')">Munch</button>
+                        <button onclick="additem('klick')">Klick</button>
                   </div>
-                  
-                  
-                  <div class="col">
-                        <div class="row">
-                              <button class="btn btn-warning" on-click="reset(health.100)">Reset</button>
-                        </div>
-            
+            </div>
+
+
+            <div class="col">
+                  <div class="row">
+                        <button class="btn btn-warning" on-click="reset(health.100)">Reset</button>
+                  </div>
+
       </footer>
-      
-      
+
+
       <script src="app.js">
       </script>
 </body>
+
 </html>
